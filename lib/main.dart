@@ -42,8 +42,8 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/splash.png',
-                fit: BoxFit.contain,
+                'assets/splash.jpg',
+                fit: BoxFit.cover,
               ),
             ],
           ),
