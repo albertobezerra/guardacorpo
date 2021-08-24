@@ -51,9 +51,25 @@ class _EstacionarioState extends State<Estacionario> {
                 SizedBox(height: 20),
               ],
             ),
-          )
-
-          ///AQUI
+          ),
+          SizedBox(height: 16),
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                RichText(
+                    text: TextSpan(
+                  text: 'Mais Buscados'.toUpperCase(),
+                  style: TextStyle(
+                    fontFamily: 'Segoe Bold',
+                    color: Color(0xFF0C5422),
+                  ),
+                ))
+              ],
+            ),
+          ),
         ],
       ),
     );
