@@ -70,6 +70,30 @@ class _EstacionarioState extends State<Estacionario> {
               ],
             ),
           ),
+          Container(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 200,
+                    child: ListView.builder(
+                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) => Container(
+                        height: 100,
+                        width: 100,
+                        margin: EdgeInsets.all(10),
+                        child: Center(
+                          child: Text('Merda $index'),
+                        ),
+                        color: Color(0xFF0C5422),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
