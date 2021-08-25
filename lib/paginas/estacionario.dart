@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guardacorpo/pag_normas_estac/nr_estacionario.dart';
 
 class Estacionario extends StatefulWidget {
   const Estacionario({Key? key}) : super(key: key);
@@ -65,29 +66,163 @@ class _EstacionarioState extends State<Estacionario> {
                   style: TextStyle(
                     fontFamily: 'Segoe Bold',
                     color: Color(0xFF0C5422),
+                    fontSize: 19,
                   ),
                 ))
               ],
             ),
           ),
           Container(
+            margin: EdgeInsets.only(top: 10),
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
-                    height: 200,
-                    child: ListView.builder(
-                      itemCount: 10,
+                  Container(
+                    height: 120,
+                    child: ListView(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) => Container(
-                        height: 100,
-                        width: 100,
-                        margin: EdgeInsets.all(10),
-                        child: Center(
-                          child: Text('Merda $index'),
+                      children: [
+                        MaterialButton(
+                          padding: EdgeInsets.only(left: 18, right: 8),
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        NormasEstacionariosAll()));
+                          },
+                          child: Container(
+                            // margin: EdgeInsets.only(left: 16),
+                            width: 320,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(18),
+                              ),
+                              image: DecorationImage(
+                                image:
+                                    ExactAssetImage('assets/images/menu.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Container(
+                              alignment: AlignmentDirectional.bottomStart,
+                              margin: EdgeInsets.only(left: 12, bottom: 8),
+                              child: Text(
+                                'Normas regulamentadoras'.toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Segoe Bold',
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
-                        color: Color(0xFF0C5422),
-                      ),
+                        MaterialButton(
+                          padding: EdgeInsets.only(left: 4, right: 8),
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        NormasEstacionariosAll()));
+                          },
+                          child: Container(
+                            // margin: EdgeInsets.only(left: 16),
+                            width: 320,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(18),
+                              ),
+                              image: DecorationImage(
+                                image:
+                                    ExactAssetImage('assets/images/menu.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Container(
+                              alignment: AlignmentDirectional.bottomStart,
+                              margin: EdgeInsets.only(left: 12, bottom: 8),
+                              child: Text(
+                                'Consulta de CA'.toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Segoe Bold',
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        MaterialButton(
+                          padding: EdgeInsets.only(left: 4, right: 8),
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        NormasEstacionariosAll()));
+                          },
+                          child: Container(
+                            // margin: EdgeInsets.only(left: 16),
+                            width: 320,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(18),
+                              ),
+                              image: DecorationImage(
+                                image:
+                                    ExactAssetImage('assets/images/menu.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Container(
+                              alignment: AlignmentDirectional.bottomStart,
+                              margin: EdgeInsets.only(left: 12, bottom: 8),
+                              child: Text(
+                                'Treinamentos'.toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Segoe Bold',
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        MaterialButton(
+                          padding: EdgeInsets.only(left: 4, right: 12),
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        NormasEstacionariosAll()));
+                          },
+                          child: Container(
+                            // margin: EdgeInsets.only(left: 16),
+                            width: 320,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(18),
+                              ),
+                              image: DecorationImage(
+                                image:
+                                    ExactAssetImage('assets/images/menu.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Container(
+                              alignment: AlignmentDirectional.bottomStart,
+                              margin: EdgeInsets.only(left: 12, bottom: 8),
+                              child: Text(
+                                'Temas de D.d.s'.toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Segoe Bold',
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   )
                 ],
