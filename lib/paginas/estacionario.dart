@@ -225,6 +225,24 @@ class _EstacionarioState extends State<Estacionario> {
                       ],
                     ),
                   ),
+                  Container(
+                    width: double.infinity,
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                            text: TextSpan(
+                          text: 'Mais saúde e segurança'.toUpperCase(),
+                          style: TextStyle(
+                            fontFamily: 'Segoe Bold',
+                            color: Color(0xFF0C5422),
+                            fontSize: 19,
+                          ),
+                        ))
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -249,13 +267,6 @@ class _EstacionarioState extends State<Estacionario> {
             ),
           ),
           SizedBox(height: 16),
-          SingleChildScrollView(
-            child: Container(
-              width: double.infinity,
-              height: 300,
-              color: Colors.teal,
-            ),
-          )
         ],
       ),
     );
