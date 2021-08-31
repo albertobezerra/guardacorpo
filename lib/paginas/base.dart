@@ -4,9 +4,14 @@ import 'package:guardacorpo/outras_paginas/dds_estac.dart';
 import 'package:guardacorpo/outras_paginas/treinamentos.dart';
 import 'package:guardacorpo/pag_normas_estac/nr_estacionario.dart';
 
-class Base extends StatelessWidget {
+class Base extends StatefulWidget {
   const Base({Key? key}) : super(key: key);
 
+  @override
+  _BaseState createState() => _BaseState();
+}
+
+class _BaseState extends State<Base> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +60,7 @@ class Base extends StatelessWidget {
             flex: 4,
             child: Container(
               width: double.infinity,
-              margin: EdgeInsets.only(top: 5),
+              margin: EdgeInsets.only(top: 9),
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,165 +74,159 @@ class Base extends StatelessWidget {
                       fontSize: 19,
                     ),
                   )),
-                  Container(
-                    margin: EdgeInsets.only(top: 5, left: 0),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 120,
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: [
-                                MaterialButton(
-                                  padding: EdgeInsets.only(left: 0, right: 8),
-                                  onPressed: () {
-                                    Navigator.of(context).pushReplacement(
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                NormasEstacionariosAll()));
-                                  },
-                                  child: Container(
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(18),
-                                      ),
-                                      image: DecorationImage(
-                                        image: ExactAssetImage(
-                                            'assets/images/menu.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
+                  SizedBox(height: 9),
+                  SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.height * 0.13,
+                          child: ListView(
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                              MaterialButton(
+                                padding: EdgeInsets.only(left: 0, right: 8),
+                                onPressed: () {
+                                  Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              NormasEstacionariosAll()));
+                                },
+                                child: Container(
+                                  width: 320,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(18),
                                     ),
-                                    child: Container(
-                                      alignment:
-                                          AlignmentDirectional.bottomStart,
-                                      margin:
-                                          EdgeInsets.only(left: 12, bottom: 8),
-                                      child: Text(
-                                        'Normas Regulamentadoras'.toUpperCase(),
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: 'Segoe Bold',
-                                          fontSize: 16,
-                                        ),
+                                    image: DecorationImage(
+                                      image: ExactAssetImage(
+                                          'assets/images/normas.jpg'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Container(
+                                    alignment: AlignmentDirectional.bottomStart,
+                                    margin:
+                                        EdgeInsets.only(left: 12, bottom: 8),
+                                    child: Text(
+                                      'Normas Regulamentadoras'.toUpperCase(),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: 'Segoe Bold',
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
                                 ),
-                                MaterialButton(
-                                  padding: EdgeInsets.only(left: 0, right: 8),
-                                  onPressed: () {
-                                    Navigator.of(context).pushReplacement(
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                ConsultaCa()));
-                                  },
-                                  child: Container(
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(18),
-                                      ),
-                                      image: DecorationImage(
-                                        image: ExactAssetImage(
-                                            'assets/images/menu.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
+                              ),
+                              MaterialButton(
+                                padding: EdgeInsets.only(left: 0, right: 8),
+                                onPressed: () {
+                                  Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                          builder: (context) => ConsultaCa()));
+                                },
+                                child: Container(
+                                  width: 320,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(18),
                                     ),
-                                    child: Container(
-                                      alignment:
-                                          AlignmentDirectional.bottomStart,
-                                      margin:
-                                          EdgeInsets.only(left: 12, bottom: 8),
-                                      child: Text(
-                                        'Consulta de c.a'.toUpperCase(),
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: 'Segoe Bold',
-                                          fontSize: 16,
-                                        ),
+                                    image: DecorationImage(
+                                      image: ExactAssetImage(
+                                          'assets/images/epi.jpg'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Container(
+                                    alignment: AlignmentDirectional.bottomStart,
+                                    margin:
+                                        EdgeInsets.only(left: 12, bottom: 8),
+                                    child: Text(
+                                      'Consulta de c.a'.toUpperCase(),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: 'Segoe Bold',
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
                                 ),
-                                MaterialButton(
-                                  padding: EdgeInsets.only(left: 0, right: 8),
-                                  onPressed: () {
-                                    Navigator.of(context).pushReplacement(
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                Treinamentos()));
-                                  },
-                                  child: Container(
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(18),
-                                      ),
-                                      image: DecorationImage(
-                                        image: ExactAssetImage(
-                                            'assets/images/menu.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
+                              ),
+                              MaterialButton(
+                                padding: EdgeInsets.only(left: 0, right: 8),
+                                onPressed: () {
+                                  Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Treinamentos()));
+                                },
+                                child: Container(
+                                  width: 320,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(18),
                                     ),
-                                    child: Container(
-                                      alignment:
-                                          AlignmentDirectional.bottomStart,
-                                      margin:
-                                          EdgeInsets.only(left: 12, bottom: 8),
-                                      child: Text(
-                                        'Treinamentos'.toUpperCase(),
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: 'Segoe Bold',
-                                          fontSize: 16,
-                                        ),
+                                    image: DecorationImage(
+                                      image: ExactAssetImage(
+                                          'assets/images/treinamentos.jpg'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Container(
+                                    alignment: AlignmentDirectional.bottomStart,
+                                    margin:
+                                        EdgeInsets.only(left: 12, bottom: 8),
+                                    child: Text(
+                                      'Treinamentos'.toUpperCase(),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: 'Segoe Bold',
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
                                 ),
-                                MaterialButton(
-                                  padding: EdgeInsets.only(left: 0, right: 0),
-                                  onPressed: () {
-                                    Navigator.of(context).pushReplacement(
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                DdsEstacionario()));
-                                  },
-                                  child: Container(
-                                    width: 320,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(18),
-                                      ),
-                                      image: DecorationImage(
-                                        image: ExactAssetImage(
-                                            'assets/images/menu.jpg'),
-                                        fit: BoxFit.cover,
-                                      ),
+                              ),
+                              MaterialButton(
+                                padding: EdgeInsets.only(left: 0, right: 0),
+                                onPressed: () {
+                                  Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              DdsEstacionario()));
+                                },
+                                child: Container(
+                                  width: 320,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(18),
                                     ),
-                                    child: Container(
-                                      alignment:
-                                          AlignmentDirectional.bottomStart,
-                                      margin:
-                                          EdgeInsets.only(left: 12, bottom: 8),
-                                      child: Text(
-                                        'temas de d.d.s'.toUpperCase(),
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: 'Segoe Bold',
-                                          fontSize: 16,
-                                        ),
+                                    image: DecorationImage(
+                                      image: ExactAssetImage(
+                                          'assets/images/dds.jpg'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  child: Container(
+                                    alignment: AlignmentDirectional.bottomStart,
+                                    margin:
+                                        EdgeInsets.only(left: 12, bottom: 8),
+                                    child: Text(
+                                      'temas de d.d.s'.toUpperCase(),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: 'Segoe Bold',
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
-                                )
-                              ],
-                            ),
+                                ),
+                              )
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   )
                 ],
@@ -238,11 +237,10 @@ class Base extends StatelessWidget {
             flex: 1,
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.only(left: 16, top: 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 5),
                   RichText(
                       text: TextSpan(
                     text: 'Mais saúde e segurança'.toUpperCase(),
@@ -263,42 +261,262 @@ class Base extends StatelessWidget {
               removeTop: true,
               child: ListView(
                 children: [
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
+                  // _listadebtnssecundarios(),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Normas Regulamentadoras'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Normas Regulamentadoras'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Normas Regulamentadoras'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.map),
-                    title: Text("data"),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Normas Regulamentadoras'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
           ),
           Flexible(
-            flex: 2,
+            flex: 3,
             child: Container(
-              color: Colors.indigo,
+              width: double.infinity,
+              margin: EdgeInsets.only(top: 9),
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  RichText(
+                      text: TextSpan(
+                    text: 'emergência'.toUpperCase(),
+                    style: TextStyle(
+                      fontFamily: 'Segoe Bold',
+                      color: Color(0xFF0C5422),
+                      fontSize: 19,
+                    ),
+                  )),
+                  SizedBox(height: 10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      MaterialButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      NormasEstacionariosAll()));
+                        },
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.3,
+                          height: MediaQuery.of(context).size.height * 0.07,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(9),
+                            ),
+                            image: DecorationImage(
+                              image: ExactAssetImage('assets/images/menu.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'samu'.toUpperCase(),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Segoe Bold',
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      MaterialButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      NormasEstacionariosAll()));
+                        },
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.3,
+                          height: MediaQuery.of(context).size.height * 0.07,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(9),
+                            ),
+                            image: DecorationImage(
+                              image: ExactAssetImage('assets/images/menu.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Bombeiros'.toUpperCase(),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Segoe Bold',
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      MaterialButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      NormasEstacionariosAll()));
+                        },
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.3,
+                          height: MediaQuery.of(context).size.height * 0.07,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(9),
+                            ),
+                            image: DecorationImage(
+                              image: ExactAssetImage('assets/images/menu.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Polícia'.toUpperCase(),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Segoe Bold',
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
