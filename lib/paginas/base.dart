@@ -284,7 +284,7 @@ class _BaseState extends State<Base> {
                         alignment: AlignmentDirectional.bottomStart,
                         margin: EdgeInsets.only(left: 12, bottom: 8),
                         child: Text(
-                          'Normas Regulamentadoras'.toUpperCase(),
+                          'Mapa de Risco'.toUpperCase(),
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Segoe Bold',
@@ -316,7 +316,7 @@ class _BaseState extends State<Base> {
                         alignment: AlignmentDirectional.bottomStart,
                         margin: EdgeInsets.only(left: 12, bottom: 8),
                         child: Text(
-                          'Normas Regulamentadoras'.toUpperCase(),
+                          'Cipa'.toUpperCase(),
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Segoe Bold',
@@ -348,7 +348,7 @@ class _BaseState extends State<Base> {
                         alignment: AlignmentDirectional.bottomStart,
                         margin: EdgeInsets.only(left: 12, bottom: 8),
                         child: Text(
-                          'Normas Regulamentadoras'.toUpperCase(),
+                          'Primeiros Socorros'.toUpperCase(),
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Segoe Bold',
@@ -380,7 +380,199 @@ class _BaseState extends State<Base> {
                         alignment: AlignmentDirectional.bottomStart,
                         margin: EdgeInsets.only(left: 12, bottom: 8),
                         child: Text(
-                          'Normas Regulamentadoras'.toUpperCase(),
+                          'Sinalização de Segurança'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Datas Importantes'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Técnico em tst'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'História da Segurança do Trabalho'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'NBrs Relevantes'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'nho'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Tipos de EPi'.toUpperCase(),
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Segoe Bold',
