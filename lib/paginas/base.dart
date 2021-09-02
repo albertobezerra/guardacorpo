@@ -582,6 +582,358 @@ class _BaseState extends State<Base> {
                       ),
                     ),
                   ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'O.s'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'P.P.P'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Incêndio'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Acidentes de Trabalho'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Riscos Ambientais'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'E-Social'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'C.L.T'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'C.I.D'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'A.S.O'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Consulta de Cnae'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  MaterialButton(
+                    padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => NormasEstacionariosAll()));
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(18),
+                        ),
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Container(
+                        alignment: AlignmentDirectional.bottomStart,
+                        margin: EdgeInsets.only(left: 12, bottom: 8),
+                        child: Text(
+                          'Consulta de CNPJ'.toUpperCase(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Segoe Bold',
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
