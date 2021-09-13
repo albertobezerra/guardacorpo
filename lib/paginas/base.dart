@@ -1,8 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:guardacorpo/outras_paginas/acidentes.dart';
+import 'package:guardacorpo/outras_paginas/aso.dart';
+import 'package:guardacorpo/outras_paginas/cipa.dart';
+import 'package:guardacorpo/outras_paginas/clt.dart';
+import 'package:guardacorpo/outras_paginas/cnae.dart';
+import 'package:guardacorpo/outras_paginas/cnpj.dart';
 import 'package:guardacorpo/outras_paginas/consulta_ca.dart';
+import 'package:guardacorpo/outras_paginas/datas.dart';
 import 'package:guardacorpo/outras_paginas/dds_estac.dart';
+import 'package:guardacorpo/outras_paginas/epi_estacionario.dart';
+import 'package:guardacorpo/outras_paginas/incendio.dart';
+import 'package:guardacorpo/outras_paginas/mapaderisco.dart';
+import 'package:guardacorpo/outras_paginas/nbr_estacionario.dart';
+import 'package:guardacorpo/outras_paginas/nho_estacionario.dart';
+import 'package:guardacorpo/outras_paginas/ordemservico.dart';
+import 'package:guardacorpo/outras_paginas/ppp.dart';
+import 'package:guardacorpo/outras_paginas/primeiros_socorros_estacionario.dart';
+import 'package:guardacorpo/outras_paginas/riscos_ambientais.dart';
+import 'package:guardacorpo/outras_paginas/sinalizacao.dart';
+import 'package:guardacorpo/outras_paginas/tecnico.dart';
 import 'package:guardacorpo/outras_paginas/treinamentos.dart';
 import 'package:guardacorpo/pag_normas_estac/nr_estacionario.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Base extends StatefulWidget {
   const Base({Key? key}) : super(key: key);
@@ -266,7 +285,7 @@ class _BaseState extends State<Base> {
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                          builder: (context) => MapadeRisco()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -276,7 +295,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/mapa.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -297,8 +316,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Cipa()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -308,7 +327,8 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image:
+                              ExactAssetImage('assets/images/treinamentos.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -330,7 +350,8 @@ class _BaseState extends State<Base> {
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                          builder: (context) =>
+                              PrimeirosSocorrosEstacionario()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -340,7 +361,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/cid.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -362,7 +383,7 @@ class _BaseState extends State<Base> {
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                          builder: (context) => Sinalizacao()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -372,7 +393,8 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image:
+                              ExactAssetImage('assets/images/sinalizacao.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -393,8 +415,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Datas()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -404,7 +426,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/datas.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -425,8 +447,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Tecnico()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -436,7 +458,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/tecnico.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -468,7 +490,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/historia.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -489,8 +511,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => NBRS()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -500,7 +522,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/nbr.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -521,8 +543,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => NHO()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -532,7 +554,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/normas.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -553,8 +575,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => EPI()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -564,7 +586,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/epi.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -585,8 +607,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => OS()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -617,8 +639,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => PPP()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -628,7 +650,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/ppp.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -649,8 +671,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Incendio()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -660,7 +682,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/incendio.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -681,8 +703,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Acidente()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -692,7 +714,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/acidente.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -714,7 +736,7 @@ class _BaseState extends State<Base> {
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                          builder: (context) => RiscosAmbientais()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -724,7 +746,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/riscos.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -756,7 +778,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/esocial.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -777,8 +799,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => CLT()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -788,7 +810,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/clt.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -820,7 +842,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/cid.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -841,8 +863,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => ASO()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -852,7 +874,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/aso.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -873,8 +895,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => CNAE()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -884,7 +906,7 @@ class _BaseState extends State<Base> {
                           Radius.circular(18),
                         ),
                         image: DecorationImage(
-                          image: ExactAssetImage('assets/images/menu.jpg'),
+                          image: ExactAssetImage('assets/images/cnae.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -905,8 +927,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => CNPJ()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -963,12 +985,7 @@ class _BaseState extends State<Base> {
                     children: [
                       MaterialButton(
                         padding: EdgeInsets.all(0),
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      NormasEstacionariosAll()));
-                        },
+                        onPressed: () => launch("tel://192"),
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.3,
                           height: MediaQuery.of(context).size.height * 0.07,
@@ -995,12 +1012,7 @@ class _BaseState extends State<Base> {
                       ),
                       MaterialButton(
                         padding: EdgeInsets.all(0),
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      NormasEstacionariosAll()));
-                        },
+                        onPressed: () => launch("tel://193"),
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.3,
                           height: MediaQuery.of(context).size.height * 0.07,
@@ -1027,12 +1039,7 @@ class _BaseState extends State<Base> {
                       ),
                       MaterialButton(
                         padding: EdgeInsets.all(0),
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      NormasEstacionariosAll()));
-                        },
+                        onPressed: () => launch("tel://190"),
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.3,
                           height: MediaQuery.of(context).size.height * 0.07,
