@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guardacorpo/outras_paginas/acidentes.dart';
 import 'package:guardacorpo/outras_paginas/aso.dart';
+import 'package:guardacorpo/outras_paginas/cid.dart';
 import 'package:guardacorpo/outras_paginas/cipa.dart';
 import 'package:guardacorpo/outras_paginas/clt.dart';
 import 'package:guardacorpo/outras_paginas/cnae.dart';
@@ -9,6 +10,8 @@ import 'package:guardacorpo/outras_paginas/consulta_ca.dart';
 import 'package:guardacorpo/outras_paginas/datas.dart';
 import 'package:guardacorpo/outras_paginas/dds_estac.dart';
 import 'package:guardacorpo/outras_paginas/epi_estacionario.dart';
+import 'package:guardacorpo/outras_paginas/esocial.dart';
+import 'package:guardacorpo/outras_paginas/historia.dart';
 import 'package:guardacorpo/outras_paginas/incendio.dart';
 import 'package:guardacorpo/outras_paginas/mapaderisco.dart';
 import 'package:guardacorpo/outras_paginas/nbr_estacionario.dart';
@@ -20,7 +23,7 @@ import 'package:guardacorpo/outras_paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/outras_paginas/sinalizacao.dart';
 import 'package:guardacorpo/outras_paginas/tecnico.dart';
 import 'package:guardacorpo/outras_paginas/treinamentos.dart';
-import 'package:guardacorpo/pag_normas_estac/nr_estacionario.dart';
+import 'package:guardacorpo/paginasinternar.dart/estacionario_nrs.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Base extends StatefulWidget {
@@ -109,7 +112,7 @@ class _BaseState extends State<Base> {
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              NormasEstacionariosAll()));
+                                              NormasEstacionarios()));
                                 },
                                 child: Container(
                                   width: 320,
@@ -479,8 +482,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Historia()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -767,8 +770,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Esocial()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -831,8 +834,8 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => NormasEstacionariosAll()));
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => Cid()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
