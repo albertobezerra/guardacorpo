@@ -23,7 +23,7 @@ import 'package:guardacorpo/outras_paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/outras_paginas/sinalizacao.dart';
 import 'package:guardacorpo/outras_paginas/tecnico.dart';
 import 'package:guardacorpo/outras_paginas/treinamentos.dart';
-import 'package:guardacorpo/paginasinternar.dart/estacionario_nrs.dart';
+import 'package:guardacorpo/paginasinternar.dart/nrs_estacionario.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Base extends StatefulWidget {
@@ -112,7 +112,7 @@ class _BaseState extends State<Base> {
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              NormasEstacionarios()));
+                                              NrsEstacionario()));
                                 },
                                 child: Container(
                                   width: 320,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guardacorpo/outras_paginas/mapaderisco.dart';
 
 class NormasEstacionarios extends StatelessWidget {
   const NormasEstacionarios({Key? key}) : super(key: key);
@@ -135,12 +136,185 @@ class NormasEstacionarios extends StatelessWidget {
               ),
             ),
             Expanded(
-                child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(topRight: Radius.circular(70)),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(70),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 30),
+                    Row(
+                      children: [
+                        SizedBox(width: 30),
+                        Text(
+                          'A lista vem abaixo',
+                          style: TextStyle(
+                              color: Colors.deepOrange,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Expanded(child: Container()),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.loop,
+                              size: 30,
+                              color: Colors.deepOrange,
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 30)
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ))
+            ),
+            Flexible(
+              flex: 2,
+              child: MediaQuery.removePadding(
+                context: context,
+                removeLeft: true,
+                child: ListView(
+                  children: [
+                    MaterialButton(
+                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => MapadeRisco()));
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(18),
+                          ),
+                          image: DecorationImage(
+                            image: ExactAssetImage('assets/images/mapa.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Container(
+                          alignment: AlignmentDirectional.bottomStart,
+                          margin: EdgeInsets.only(left: 12, bottom: 8),
+                          child: Text(
+                            'Mapa de Risco'.toUpperCase(),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Segoe Bold',
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    MaterialButton(
+                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => MapadeRisco()));
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(18),
+                          ),
+                          image: DecorationImage(
+                            image: ExactAssetImage('assets/images/mapa.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Container(
+                          alignment: AlignmentDirectional.bottomStart,
+                          margin: EdgeInsets.only(left: 12, bottom: 8),
+                          child: Text(
+                            'Mapa de Risco'.toUpperCase(),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Segoe Bold',
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    MaterialButton(
+                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => MapadeRisco()));
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(18),
+                          ),
+                          image: DecorationImage(
+                            image: ExactAssetImage('assets/images/mapa.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Container(
+                          alignment: AlignmentDirectional.bottomStart,
+                          margin: EdgeInsets.only(left: 12, bottom: 8),
+                          child: Text(
+                            'Mapa de Risco'.toUpperCase(),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Segoe Bold',
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    MaterialButton(
+                      padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => MapadeRisco()));
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(18),
+                          ),
+                          image: DecorationImage(
+                            image: ExactAssetImage('assets/images/mapa.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Container(
+                          alignment: AlignmentDirectional.bottomStart,
+                          margin: EdgeInsets.only(left: 12, bottom: 8),
+                          child: Text(
+                            'Mapa de Risco'.toUpperCase(),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Segoe Bold',
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Flexible(
+              flex: 1,
+              child: Text('sd'),
+            )
           ],
         ),
       ),
