@@ -55,7 +55,14 @@ class NrsEstacionario extends StatelessWidget {
           ),
           Flexible(
             flex: 6,
-            child: Container(),
+            child: Container(
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) => ListTile(
+                  title: Text('intem $index'),
+                ),
+              ),
+            ),
           ),
           Flexible(
             flex: 1,
