@@ -55,11 +55,34 @@ class NrsEstacionario extends StatelessWidget {
           ),
           Flexible(
             flex: 6,
-            child: Container(
-              child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (context, index) => ListTile(
-                  title: Text('intem $index'),
+            child: MediaQuery.removePadding(
+              context: context,
+              removeTop: true,
+              child: Container(
+                margin: EdgeInsets.all(24),
+                child: ListView(
+                  children: [
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: Container(
+                        padding: EdgeInsets.all(24),
+                        child: Row(
+                          children: [
+                            Icon(Icons.library_books),
+                            SizedBox(width: 8),
+                            Text(
+                              'NR 1 - Disposições Gerais e gerenciamento de riscos Ocupacionais'
+                                  .toUpperCase(),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),

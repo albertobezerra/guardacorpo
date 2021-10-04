@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../lib/paginas/index.dart';
+import 'package:guardacorpo/paginas/index.dart';
 
 void main() {
   runApp(MaterialApp(
