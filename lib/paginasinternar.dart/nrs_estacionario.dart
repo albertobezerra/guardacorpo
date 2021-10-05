@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guardacorpo/normas/nr1.dart';
 
 class NrsEstacionario extends StatelessWidget {
   const NrsEstacionario({Key? key}) : super(key: key);
@@ -67,21 +68,61 @@ class NrsEstacionario extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       elevation: 5,
-                      child: Container(
-                        padding: EdgeInsets.all(24),
-                        child: Row(
-                          children: [
-                            Icon(Icons.library_books),
-                            SizedBox(width: 8),
-                            Text(
-                              'NR 1 - Disposições Gerais e gerenciamento de riscos Ocupacionais'
-                                  .toUpperCase(),
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ],
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR1()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 1 - Disposições Gerais e gerenciamento de riscos Ocupacionais'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    )
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR1()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 2 - INSPEÇÃO PRÉVIA | revogada'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
