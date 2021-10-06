@@ -23,14 +23,40 @@ import 'package:guardacorpo/normas/nr15anexo7.dart';
 import 'package:guardacorpo/normas/nr15anexo8.dart';
 import 'package:guardacorpo/normas/nr15anexo9.dart';
 import 'package:guardacorpo/normas/nr16.dart';
+import 'package:guardacorpo/normas/nr17.dart';
+import 'package:guardacorpo/normas/nr17anexo1.dart';
+import 'package:guardacorpo/normas/nr17anexo2.dart';
+import 'package:guardacorpo/normas/nr18.dart';
+import 'package:guardacorpo/normas/nr19.dart';
 import 'package:guardacorpo/normas/nr2.dart';
+import 'package:guardacorpo/normas/nr20.dart';
+import 'package:guardacorpo/normas/nr21.dart';
+import 'package:guardacorpo/normas/nr22.dart';
+import 'package:guardacorpo/normas/nr23.dart';
+import 'package:guardacorpo/normas/nr24.dart';
+import 'package:guardacorpo/normas/nr25.dart';
+import 'package:guardacorpo/normas/nr26.dart';
+import 'package:guardacorpo/normas/nr27.dart';
+import 'package:guardacorpo/normas/nr28.dart';
+import 'package:guardacorpo/normas/nr29.dart';
 import 'package:guardacorpo/normas/nr3.dart';
+import 'package:guardacorpo/normas/nr30.dart';
+import 'package:guardacorpo/normas/nr30anexo1.dart';
+import 'package:guardacorpo/normas/nr30anexo2.dart';
+import 'package:guardacorpo/normas/nr31.dart';
+import 'package:guardacorpo/normas/nr32.dart';
+import 'package:guardacorpo/normas/nr33.dart';
+import 'package:guardacorpo/normas/nr34.dart';
+import 'package:guardacorpo/normas/nr35.dart';
+import 'package:guardacorpo/normas/nr36.dart';
+import 'package:guardacorpo/normas/nr37.dart';
 import 'package:guardacorpo/normas/nr4.dart';
 import 'package:guardacorpo/normas/nr5.dart';
 import 'package:guardacorpo/normas/nr6.dart';
 import 'package:guardacorpo/normas/nr7.dart';
 import 'package:guardacorpo/normas/nr8.dart';
 import 'package:guardacorpo/normas/nr9.dart';
+import 'package:guardacorpo/paginas/index2.dart';
 
 class NrsEstacionario extends StatelessWidget {
   const NrsEstacionario({Key? key}) : super(key: key);
@@ -62,14 +88,23 @@ class NrsEstacionario extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Icon(
-                              Icons.arrow_back,
-                              size: 26,
-                              color: Colors.white,
+                            IconButton(
+                              icon: Icon(
+                                Icons.arrow_back,
+                                size: 26,
+                                color: Colors.white,
+                              ),
+                              padding: EdgeInsets.zero,
+                              constraints: BoxConstraints(),
+                              onPressed: () {
+                                Navigator.of(context).pushReplacement(
+                                    MaterialPageRoute(
+                                        builder: (context) => Base()));
+                              },
                             ),
                           ],
                         ),
-                        SizedBox(height: 110),
+                        SizedBox(height: 80),
                         Text(
                           'normas regulamentadoras'.toUpperCase(),
                           style: TextStyle(
@@ -1144,6 +1179,831 @@ class NrsEstacionario extends StatelessWidget {
                               Expanded(
                                 child: Text(
                                   'NR 16 - ATIVIDADES E OPERAÇÕES PERIGOSAS'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR17()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 17 - ERGONOMIA'.toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => NR17Anexo1()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 17 - ANEXO I - TRABALHO DOS OPERADORES DE CHECKOUT'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => NR17Anexo2()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 17 - ANEXO II - TRABALHO EM TELEATENDIMENTO/TELEMARKETING'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR18()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 18 - SEGURANÇA E SAÚDE NO TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR19()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 19 - EXPLOSIVOS'.toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR20()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 20 - SEGURANÇA E SAÚDE NO TRABALHO COM INFLAMÁVEIS E COMBUSTÍVEIS'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR21()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 21 - TRABALHOS A CÉU ABERTO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR22()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 22 - SEGURANÇA E SAÚDE OCUPACIONAL NA MINERAÇÃO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR23()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 23 - PROTEÇÃO CONTRA INCÊNDIOS'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR24()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 24 - CONDIÇÕES SANITÁRIAS E DE CONFORTO NOS LOCAIS DE TRABALHO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR25()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 25 - RESÍDUOS INDUSTRIAIS'.toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR26()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 26 - SINALIZAÇÃO DE SEGURANÇA'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR27()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 27 - REGISTRO PROFISSIONAL DO TÉCNICO DE SEGURANÇA DO TRABALHO (REVOGADA)'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR28()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 28 - FISCALIZAÇÃO E PENALIDADES'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR29()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 29 - SEGURANÇA E SAÚDE NO TRABALHO PORTUÁRIO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR30()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 30 - SEGURANÇA E SAÚDE NO TRABALHO AQUAVIÁRIO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => NR30Anexo1()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 30 - ANEXO I - PESCA COMERCIAL E INDUSTRIAL'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => NR30Anexo2()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 30 - ANEXO II - PLATAFORMAS E INSTALAÇÕES DE APOIO'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR31()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 31 - SEGURANÇA E SAÚDE NO TRABALHO NA AGRICULTURA, PECUÁRIA, SILVICULTURA, EXPLORAÇÃO FLORESTAL E AQUICULTURA'
+                                      .toUpperCase(),
+                                  maxLines: 5,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR32()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 32 - SEGURANÇA E SAÚDE NO TRABALHO EM SERVIÇOS DE SAÚDE'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR33()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 33 - SEGURANÇA E SAÚDE NOS TRABALHOS EM ESPAÇOS CONFINADOS'
+                                      .toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR34()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 34 - CONDIÇÕES E MEIO DE TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO, REPARAÇÃO E DESMONTE NAVAL'
+                                      .toUpperCase(),
+                                  maxLines: 4,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR35()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 35 – TRABALHO EM ALTURA'.toUpperCase(),
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR36()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 36 - SEGURANÇA E SAÚDE NO TRABALHO EM EMPRESAS DE ABATE E PROCESSAMENTO DE CARNES E DERIVADOS'
+                                      .toUpperCase(),
+                                  maxLines: 4,
+                                  overflow: TextOverflow.ellipsis,
+                                  softWrap: false,
+                                  style: TextStyle(
+                                    fontFamily: 'Segoe Bold',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      elevation: 5,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => NR37()));
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(24),
+                          child: Row(
+                            children: [
+                              Icon(Icons.library_books),
+                              SizedBox(width: 20),
+                              Expanded(
+                                child: Text(
+                                  'NR 37 - SEGURANÇA E SAÚDE EM PLATAFORMAS DE PETRÓLEO'
                                       .toUpperCase(),
                                   maxLines: 3,
                                   overflow: TextOverflow.ellipsis,
