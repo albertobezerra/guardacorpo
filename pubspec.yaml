@@ -33,6 +33,7 @@ dependencies:
   url_launcher: ^6.0.10
   native_admob_flutter: ^1.5.0
   
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -73,6 +74,8 @@ flutter:
     - assets/images/clt.jpg
     - assets/images/aso.jpg
     - assets/images/cnae.jpg
+    - assets/pdf_nr/nr1.pdf
+    - assets/nr1.pdf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

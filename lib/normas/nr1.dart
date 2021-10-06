@@ -5,8 +5,6 @@ class NR1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Aqui é a página da NR1'),
-    );
+    return Container();
   }
 }
