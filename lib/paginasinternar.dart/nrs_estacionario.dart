@@ -57,10 +57,16 @@ import 'package:guardacorpo/normas/nr7.dart';
 import 'package:guardacorpo/normas/nr8.dart';
 import 'package:guardacorpo/normas/nr9.dart';
 import 'package:guardacorpo/paginas/index2.dart';
+import 'package:native_admob_flutter/native_admob_flutter.dart';
 
-class NrsEstacionario extends StatelessWidget {
+class NrsEstacionario extends StatefulWidget {
   const NrsEstacionario({Key? key}) : super(key: key);
 
+  @override
+  _NrsEstacionarioState createState() => _NrsEstacionarioState();
+}
+
+class _NrsEstacionarioState extends State<NrsEstacionario> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,7 +110,7 @@ class NrsEstacionario extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 80),
+                        SizedBox(height: 120),
                         Text(
                           'normas regulamentadoras'.toUpperCase(),
                           style: TextStyle(
@@ -247,7 +253,7 @@ class NrsEstacionario extends StatelessWidget {
                                 child: Text(
                                   'NR 4 - SERVIÇOS ESPECIALIZADOS EM ENGENHARIA DE SEGURANÇA E EM MEDICINA DO TRABALHO - sesmt'
                                       .toUpperCase(),
-                                  maxLines: 3,
+                                  maxLines: 4,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
                                   style: TextStyle(
@@ -511,7 +517,7 @@ class NrsEstacionario extends StatelessWidget {
                                 child: Text(
                                   'NR 11 - ANEXO I - REGULAMENTO TÉCNICO DE PROCEDIMENTO PARA MOVIMENTAÇÃO , ARMAZENAMENTO E MANUSEIO DE CHAPAS DE ROCHAS ORNAMENTAIS'
                                       .toUpperCase(),
-                                  maxLines: 3,
+                                  maxLines: 5,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,
                                   style: TextStyle(
@@ -2027,6 +2033,7 @@ class NrsEstacionario extends StatelessWidget {
             flex: 1,
             child: Container(
               color: Colors.lightBlue,
+              child: BannerAd(size: BannerSize.ADAPTIVE),
             ),
           ),
         ],
