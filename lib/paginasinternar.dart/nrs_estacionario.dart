@@ -59,6 +59,8 @@ import 'package:guardacorpo/normas/nr9.dart';
 import 'package:guardacorpo/paginas/index2.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
 
+final interstitialAd = InterstitialAd();
+
 class NrsEstacionario extends StatefulWidget {
   const NrsEstacionario({Key? key}) : super(key: key);
 
@@ -141,7 +143,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR1()));
                         },
@@ -186,7 +193,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                               SizedBox(width: 20),
                               Expanded(
                                 child: Text(
-                                  'NR 2 - INSPEÇÃO PRÉVIA | revogada'
+                                  'NR 2 - INSPEÇÃO PRÉVIA - revogada'
                                       .toUpperCase(),
                                   maxLines: 3,
                                   overflow: TextOverflow.ellipsis,
@@ -1612,7 +1619,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                               SizedBox(width: 20),
                               Expanded(
                                 child: Text(
-                                  'NR 27 - REGISTRO PROFISSIONAL DO TÉCNICO DE SEGURANÇA DO TRABALHO (REVOGADA)'
+                                  'NR 27 - REGISTRO PROFISSIONAL DO TÉCNICO DE SEGURANÇA DO TRABALHO - REVOGADA'
                                       .toUpperCase(),
                                   maxLines: 3,
                                   overflow: TextOverflow.ellipsis,
@@ -2032,7 +2039,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
           Flexible(
             flex: 1,
             child: Container(
-              color: Colors.lightBlue,
+              // color: Colors.lightBlue,
               child: BannerAd(size: BannerSize.ADAPTIVE),
             ),
           ),

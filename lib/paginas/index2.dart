@@ -26,6 +26,8 @@ import 'package:guardacorpo/outras_paginas/treinamentos.dart';
 import 'package:guardacorpo/paginasinternar.dart/nrs_estacionario.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// final interstitialAd = InterstitialAd();
+
 class Base extends StatefulWidget {
   const Base({Key? key}) : super(key: key);
 
@@ -108,7 +110,12 @@ class _BaseState extends State<Base> {
                             children: [
                               MaterialButton(
                                 padding: EdgeInsets.only(left: 0, right: 8),
-                                onPressed: () {
+                                onPressed: () async {
+                                  // if (!interstitialAd.isAvailable)
+                                  //   await interstitialAd.load();
+                                  // if (interstitialAd.isAvailable) {
+                                  //   await interstitialAd.show();
+                                  // }
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
                                           builder: (context) =>
