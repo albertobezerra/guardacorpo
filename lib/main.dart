@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:guardacorpo/paginas/index.dart';
+import 'package:guardacorpo/paginas/splashscreen.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
 
 String get bannerAdUnitId {

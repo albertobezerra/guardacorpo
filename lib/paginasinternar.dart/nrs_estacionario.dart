@@ -56,7 +56,7 @@ import 'package:guardacorpo/normas/nr6.dart';
 import 'package:guardacorpo/normas/nr7.dart';
 import 'package:guardacorpo/normas/nr8.dart';
 import 'package:guardacorpo/normas/nr9.dart';
-import 'package:guardacorpo/paginas/index2.dart';
+import 'package:guardacorpo/paginas/estacionario.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
 
 final interstitialAd = InterstitialAd();

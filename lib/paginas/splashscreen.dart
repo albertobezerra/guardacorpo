@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'index2.dart';
+import 'estacionario.dart';
 
 class Index extends StatefulWidget {
   const Index({Key? key}) : super(key: key);
