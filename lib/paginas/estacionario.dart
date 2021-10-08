@@ -23,7 +23,7 @@ import 'package:guardacorpo/outras_paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/outras_paginas/sinalizacao.dart';
 import 'package:guardacorpo/outras_paginas/tecnico.dart';
 import 'package:guardacorpo/outras_paginas/treinamentos.dart';
-import 'package:guardacorpo/paginasinternar.dart/nrs_estacionario.dart';
+import 'package:guardacorpo/paginas/nrs_estacionario.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // final interstitialAd = InterstitialAd();
@@ -53,29 +53,33 @@ class _BaseState extends State<Base> {
                     bottomLeft: Radius.circular(20),
                     bottomRight: Radius.circular(20),
                   )),
-              child: Column(
-                children: [
-                  Row(),
-                  SizedBox(height: 40),
-                  Image(
-                    height: 100,
-                    width: MediaQuery.of(context).size.width,
-                    image: AssetImage('assets/images/logo.png'),
+              child: Container(
+                child: Center(
+                  child: Column(
+                    children: [
+                      Row(),
+                      SizedBox(height: 40),
+                      Image(
+                        height: 100,
+                        width: MediaQuery.of(context).size.width,
+                        image: AssetImage('assets/images/logo.png'),
+                      ),
+                      Text(
+                        'Guarda Corpo',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Segoe Black',
+                          fontSize: 40,
+                        ),
+                      ),
+                      Text(
+                        'Um app sobre saúde e segurança do trabalho',
+                        style: TextStyle(
+                            color: Colors.white, fontFamily: 'Segoe Light'),
+                      ),
+                    ],
                   ),
-                  Text(
-                    'Guarda Corpo',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Segoe Black',
-                      fontSize: 40,
-                    ),
-                  ),
-                  Text(
-                    'Um app sobre saúde e segurança do trabalho',
-                    style: TextStyle(
-                        color: Colors.white, fontFamily: 'Segoe Light'),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
@@ -86,179 +90,186 @@ class _BaseState extends State<Base> {
               width: double.infinity,
               margin: EdgeInsets.only(top: 9),
               padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  RichText(
-                      text: TextSpan(
-                    text: 'Mais Buscados'.toUpperCase(),
-                    style: TextStyle(
-                      fontFamily: 'Segoe Bold',
-                      color: Color(0xFF0C5422),
-                      fontSize: 19,
-                    ),
-                  )),
-                  SizedBox(height: 9),
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: MediaQuery.of(context).size.height * 0.13,
-                          child: ListView(
-                            scrollDirection: Axis.horizontal,
-                            children: [
-                              MaterialButton(
-                                padding: EdgeInsets.only(left: 0, right: 8),
-                                onPressed: () async {
-                                  // if (!interstitialAd.isAvailable)
-                                  //   await interstitialAd.load();
-                                  // if (interstitialAd.isAvailable) {
-                                  //   await interstitialAd.show();
-                                  // }
-                                  Navigator.of(context).pushReplacement(
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              NrsEstacionario()));
-                                },
-                                child: Container(
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(18),
-                                    ),
-                                    image: DecorationImage(
-                                      image: ExactAssetImage(
-                                          'assets/images/normas.jpg'),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+              child: Center(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    RichText(
+                        text: TextSpan(
+                      text: 'Mais Buscados'.toUpperCase(),
+                      style: TextStyle(
+                        fontFamily: 'Segoe Bold',
+                        color: Color(0xFF0C5422),
+                        fontSize: 19,
+                      ),
+                    )),
+                    SizedBox(height: 9),
+                    SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: MediaQuery.of(context).size.height * 0.13,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                MaterialButton(
+                                  padding: EdgeInsets.only(left: 0, right: 8),
+                                  onPressed: () async {
+                                    // if (!interstitialAd.isAvailable)
+                                    //   await interstitialAd.load();
+                                    // if (interstitialAd.isAvailable) {
+                                    //   await interstitialAd.show();
+                                    // }
+                                    Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                NrsEstacionario()));
+                                  },
                                   child: Container(
-                                    alignment: AlignmentDirectional.bottomStart,
-                                    margin:
-                                        EdgeInsets.only(left: 12, bottom: 8),
-                                    child: Text(
-                                      'Normas Regulamentadoras'.toUpperCase(),
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Segoe Bold',
-                                        fontSize: 16,
+                                    width: 320,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(18),
+                                      ),
+                                      image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/normas.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Container(
+                                      alignment:
+                                          AlignmentDirectional.bottomStart,
+                                      margin:
+                                          EdgeInsets.only(left: 12, bottom: 8),
+                                      child: Text(
+                                        'Normas Regulamentadoras'.toUpperCase(),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: 'Segoe Bold',
+                                          fontSize: 16,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              MaterialButton(
-                                padding: EdgeInsets.only(left: 0, right: 8),
-                                onPressed: () {
-                                  Navigator.of(context).pushReplacement(
-                                      MaterialPageRoute(
-                                          builder: (context) => ConsultaCa()));
-                                },
-                                child: Container(
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(18),
-                                    ),
-                                    image: DecorationImage(
-                                      image: ExactAssetImage(
-                                          'assets/images/epi.jpg'),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+                                MaterialButton(
+                                  padding: EdgeInsets.only(left: 0, right: 8),
+                                  onPressed: () {
+                                    Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                ConsultaCa()));
+                                  },
                                   child: Container(
-                                    alignment: AlignmentDirectional.bottomStart,
-                                    margin:
-                                        EdgeInsets.only(left: 12, bottom: 8),
-                                    child: Text(
-                                      'Consulta de c.a'.toUpperCase(),
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Segoe Bold',
-                                        fontSize: 16,
+                                    width: 320,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(18),
+                                      ),
+                                      image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/epi.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Container(
+                                      alignment:
+                                          AlignmentDirectional.bottomStart,
+                                      margin:
+                                          EdgeInsets.only(left: 12, bottom: 8),
+                                      child: Text(
+                                        'Consulta de c.a'.toUpperCase(),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: 'Segoe Bold',
+                                          fontSize: 16,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              MaterialButton(
-                                padding: EdgeInsets.only(left: 0, right: 8),
-                                onPressed: () {
-                                  Navigator.of(context).pushReplacement(
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              Treinamentos()));
-                                },
-                                child: Container(
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(18),
-                                    ),
-                                    image: DecorationImage(
-                                      image: ExactAssetImage(
-                                          'assets/images/treinamentos.jpg'),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+                                MaterialButton(
+                                  padding: EdgeInsets.only(left: 0, right: 8),
+                                  onPressed: () {
+                                    Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                Treinamentos()));
+                                  },
                                   child: Container(
-                                    alignment: AlignmentDirectional.bottomStart,
-                                    margin:
-                                        EdgeInsets.only(left: 12, bottom: 8),
-                                    child: Text(
-                                      'Treinamentos'.toUpperCase(),
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Segoe Bold',
-                                        fontSize: 16,
+                                    width: 320,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(18),
+                                      ),
+                                      image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/treinamentos.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Container(
+                                      alignment:
+                                          AlignmentDirectional.bottomStart,
+                                      margin:
+                                          EdgeInsets.only(left: 12, bottom: 8),
+                                      child: Text(
+                                        'Treinamentos'.toUpperCase(),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: 'Segoe Bold',
+                                          fontSize: 16,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              MaterialButton(
-                                padding: EdgeInsets.only(left: 0, right: 0),
-                                onPressed: () {
-                                  Navigator.of(context).pushReplacement(
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              DdsEstacionario()));
-                                },
-                                child: Container(
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(18),
-                                    ),
-                                    image: DecorationImage(
-                                      image: ExactAssetImage(
-                                          'assets/images/dds.jpg'),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+                                MaterialButton(
+                                  padding: EdgeInsets.only(left: 0, right: 0),
+                                  onPressed: () {
+                                    Navigator.of(context).pushReplacement(
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                DdsEstacionario()));
+                                  },
                                   child: Container(
-                                    alignment: AlignmentDirectional.bottomStart,
-                                    margin:
-                                        EdgeInsets.only(left: 12, bottom: 8),
-                                    child: Text(
-                                      'temas de d.d.s'.toUpperCase(),
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Segoe Bold',
-                                        fontSize: 16,
+                                    width: 320,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(18),
+                                      ),
+                                      image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/dds.jpg'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Container(
+                                      alignment:
+                                          AlignmentDirectional.bottomStart,
+                                      margin:
+                                          EdgeInsets.only(left: 12, bottom: 8),
+                                      child: Text(
+                                        'temas de d.d.s'.toUpperCase(),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: 'Segoe Bold',
+                                          fontSize: 16,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  )
-                ],
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

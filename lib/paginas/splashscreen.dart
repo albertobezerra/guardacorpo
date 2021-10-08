@@ -33,7 +33,7 @@ class _IndexState extends State<Index> {
               children: [
                 Center(
                   child: Text(
-                    'Saúde e Segurança do Trabalho na palma da mão.',
+                    'Saúde e Segurança\ndo Trabalho na\npalma da mão.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
