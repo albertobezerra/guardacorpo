@@ -181,7 +181,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR2()));
                         },
@@ -214,7 +219,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR3()));
                         },
@@ -246,7 +256,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR4()));
                         },
@@ -279,7 +294,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR5()));
                         },
@@ -312,7 +332,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR6()));
                         },
@@ -345,7 +370,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR7()));
                         },
@@ -378,7 +408,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR8()));
                         },
@@ -410,7 +445,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR9()));
                         },
@@ -443,7 +483,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR10()));
                         },
@@ -476,7 +521,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR11()));
                         },
@@ -509,7 +559,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR11Anexo1()));
@@ -543,7 +598,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR12()));
                         },
@@ -576,7 +636,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR13()));
                         },
@@ -609,7 +674,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR14()));
                         },
@@ -641,7 +711,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR15()));
                         },
@@ -674,7 +749,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo1()));
@@ -708,7 +788,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo2()));
@@ -742,7 +827,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo3()));
@@ -776,7 +866,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo4()));
@@ -809,7 +904,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo5()));
@@ -843,7 +943,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo6()));
@@ -877,7 +982,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo7()));
@@ -911,7 +1021,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo8()));
@@ -944,7 +1059,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo9()));
@@ -977,7 +1097,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo10()));
@@ -1010,7 +1135,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo11()));
@@ -1044,7 +1174,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo12()));
@@ -1078,7 +1213,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo13()));
@@ -1112,7 +1252,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo13a()));
@@ -1145,7 +1290,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo14()));
@@ -1179,7 +1329,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR16()));
                         },
@@ -1212,7 +1367,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR17()));
                         },
@@ -1244,10 +1404,15 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
-                                  builder: (context) => NR17Anexo1()));
+                                  builder: (context) => NR17anexo1()));
                         },
                         child: Container(
                           padding: EdgeInsets.all(24),
@@ -1278,10 +1443,15 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
-                                  builder: (context) => NR17Anexo2()));
+                                  builder: (context) => NR17anexo2()));
                         },
                         child: Container(
                           padding: EdgeInsets.all(24),
@@ -1312,7 +1482,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR18()));
                         },
@@ -1345,7 +1520,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR19()));
                         },
@@ -1377,7 +1557,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR20()));
                         },
@@ -1410,7 +1595,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR21()));
                         },
@@ -1443,7 +1633,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR22()));
                         },
@@ -1476,7 +1671,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR23()));
                         },
@@ -1509,7 +1709,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR24()));
                         },
@@ -1542,7 +1747,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR25()));
                         },
@@ -1574,7 +1784,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR26()));
                         },
@@ -1607,7 +1822,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR27()));
                         },
@@ -1640,7 +1860,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR28()));
                         },
@@ -1673,7 +1898,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR29()));
                         },
@@ -1706,7 +1936,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR30()));
                         },
@@ -1739,10 +1974,15 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
-                                  builder: (context) => NR30Anexo1()));
+                                  builder: (context) => NR30anexo1()));
                         },
                         child: Container(
                           padding: EdgeInsets.all(24),
@@ -1773,10 +2013,15 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
-                                  builder: (context) => NR30Anexo2()));
+                                  builder: (context) => NR30anexo2()));
                         },
                         child: Container(
                           padding: EdgeInsets.all(24),
@@ -1807,7 +2052,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR31()));
                         },
@@ -1840,7 +2090,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR32()));
                         },
@@ -1873,7 +2128,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR33()));
                         },
@@ -1906,7 +2166,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR34()));
                         },
@@ -1939,7 +2204,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR35()));
                         },
@@ -1971,7 +2241,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR36()));
                         },
@@ -2004,7 +2279,12 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                       ),
                       elevation: 5,
                       child: InkWell(
-                        onTap: () {
+                        onTap: () async {
+                          if (!interstitialAd.isAvailable)
+                            await interstitialAd.load();
+                          if (interstitialAd.isAvailable) {
+                            await interstitialAd.show();
+                          }
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(builder: (context) => NR37()));
                         },
@@ -2039,7 +2319,6 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
           Flexible(
             flex: 1,
             child: Container(
-              // color: Colors.lightBlue,
               child: BannerAd(size: BannerSize.ADAPTIVE),
             ),
           ),

@@ -64,7 +64,6 @@ class _NR1State extends State<NR1> {
           ),
           Flexible(
             child: Container(
-              color: Colors.redAccent,
               child: BannerAd(size: BannerSize.ADAPTIVE),
             ),
             flex: 1,

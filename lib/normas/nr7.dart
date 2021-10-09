@@ -59,7 +59,6 @@ class NR7 extends StatelessWidget {
           ),
           Flexible(
             child: Container(
-              color: Colors.redAccent,
               child: BannerAd(size: BannerSize.ADAPTIVE),
             ),
             flex: 1,
