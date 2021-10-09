@@ -76,7 +76,64 @@ flutter:
     - assets/images/aso.jpg
     - assets/images/cnae.jpg
     - assets/pdf_nr/nr1.pdf
-    - assets/nr.pdf
+    - assets/pdf_nr/nr2.pdf
+    - assets/pdf_nr/nr3.pdf
+    - assets/pdf_nr/nr4.pdf
+    - assets/pdf_nr/nr5.pdf
+    - assets/pdf_nr/nr6.pdf
+    - assets/pdf_nr/nr7.pdf
+    - assets/pdf_nr/nr8.pdf
+    - assets/pdf_nr/nr9.pdf
+    - assets/pdf_nr/nr10.pdf
+    - assets/pdf_nr/nr11.pdf
+    - assets/pdf_nr/nr11anexo1.pdf
+    - assets/pdf_nr/nr12.pdf
+    - assets/pdf_nr/nr13.pdf
+    - assets/pdf_nr/nr14.pdf
+    - assets/pdf_nr/nr15.pdf
+    - assets/pdf_nr/nr15anexo1.pdf
+    - assets/pdf_nr/nr15anexo2.pdf
+    - assets/pdf_nr/nr15anexo3.pdf
+    - assets/pdf_nr/nr15anexo4.pdf
+    - assets/pdf_nr/nr15anexo5.pdf
+    - assets/pdf_nr/nr15anexo6.pdf
+    - assets/pdf_nr/nr15anexo7.pdf
+    - assets/pdf_nr/nr15anexo8.pdf
+    - assets/pdf_nr/nr15anexo9.pdf
+    - assets/pdf_nr/nr15anexo10.pdf
+    - assets/pdf_nr/nr15anexo11.pdf
+    - assets/pdf_nr/nr15anexo12.pdf
+    - assets/pdf_nr/nr15anexo13.pdf
+    - assets/pdf_nr/nr15anexo13a.pdf
+    - assets/pdf_nr/nr15anexo14.pdf
+    - assets/pdf_nr/nr16.pdf
+    - assets/pdf_nr/nr17.pdf
+    - assets/pdf_nr/nr17anexo1.pdf
+    - assets/pdf_nr/nr17anexo2.pdf
+    - assets/pdf_nr/nr18.pdf
+    - assets/pdf_nr/nr19.pdf
+    - assets/pdf_nr/nr20.pdf
+    - assets/pdf_nr/nr21.pdf
+    - assets/pdf_nr/nr22.pdf
+    - assets/pdf_nr/nr23.pdf
+    - assets/pdf_nr/nr24.pdf
+    - assets/pdf_nr/nr25.pdf
+    - assets/pdf_nr/nr26.pdf
+    - assets/pdf_nr/nr27.pdf
+    - assets/pdf_nr/nr28.pdf
+    - assets/pdf_nr/nr29.pdf
+    - assets/pdf_nr/nr30.pdf
+    - assets/pdf_nr/nr30anexo1.pdf
+    - assets/pdf_nr/nr30anexo2.pdf
+    - assets/pdf_nr/nr31.pdf
+    - assets/pdf_nr/nr32.pdf
+    - assets/pdf_nr/nr33.pdf
+    - assets/pdf_nr/nr34.pdf
+    - assets/pdf_nr/nr35.pdf
+    - assets/pdf_nr/nr36.pdf
+    - assets/pdf_nr/nr37.pdf
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
