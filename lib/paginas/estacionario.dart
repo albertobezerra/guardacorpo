@@ -22,7 +22,7 @@ import 'package:guardacorpo/paginas/primeiros_socorros_estacionario.dart';
 import 'package:guardacorpo/paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/paginas/sinalizacao.dart';
 import 'package:guardacorpo/paginas/tecnico.dart';
-import 'package:guardacorpo/paginas/treinamentos.dart';
+import 'package:guardacorpo/paginas/treinamentos_estacionario.dart';
 import 'package:guardacorpo/paginas/nrs_estacionario.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -158,7 +158,8 @@ class _BaseState extends State<Base> {
                                 MaterialButton(
                                   padding: EdgeInsets.only(left: 0, right: 8),
                                   onPressed: () {
-                                    Navigator.of(context).pushReplacement(
+                                    Navigator.push(
+                                        context,
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 ConsultaCa()));
@@ -194,7 +195,8 @@ class _BaseState extends State<Base> {
                                 MaterialButton(
                                   padding: EdgeInsets.only(left: 0, right: 8),
                                   onPressed: () {
-                                    Navigator.of(context).pushReplacement(
+                                    Navigator.push(
+                                        context,
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 Treinamentos()));
@@ -230,7 +232,8 @@ class _BaseState extends State<Base> {
                                 MaterialButton(
                                   padding: EdgeInsets.only(left: 0, right: 0),
                                   onPressed: () {
-                                    Navigator.of(context).pushReplacement(
+                                    Navigator.push(
+                                        context,
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 DdsEstacionario()));
@@ -306,8 +309,10 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => MapadeRisco()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MapadeRisco()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -338,7 +343,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Cipa()));
                     },
                     child: Container(
@@ -371,9 +376,11 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) =>
-                              PrimeirosSocorrosEstacionario()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  PrimeirosSocorrosEstacionario()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -404,8 +411,10 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => Sinalizacao()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Sinalizacao()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -437,7 +446,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Datas()));
                     },
                     child: Container(
@@ -469,7 +478,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Tecnico()));
                     },
                     child: Container(
@@ -501,7 +510,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Historia()));
                     },
                     child: Container(
@@ -533,7 +542,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => NBRS()));
                     },
                     child: Container(
@@ -565,7 +574,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => NHO()));
                     },
                     child: Container(
@@ -597,7 +606,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => EPI()));
                     },
                     child: Container(
@@ -629,7 +638,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => OS()));
                     },
                     child: Container(
@@ -661,7 +670,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => PPP()));
                     },
                     child: Container(
@@ -693,7 +702,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Incendio()));
                     },
                     child: Container(
@@ -725,7 +734,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Acidente()));
                     },
                     child: Container(
@@ -757,8 +766,10 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => RiscosAmbientais()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RiscosAmbientais()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
@@ -789,7 +800,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Esocial()));
                     },
                     child: Container(
@@ -821,7 +832,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => CLT()));
                     },
                     child: Container(
@@ -853,7 +864,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Cid()));
                     },
                     child: Container(
@@ -885,7 +896,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => ASO()));
                     },
                     child: Container(
@@ -917,7 +928,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => CNAE()));
                     },
                     child: Container(
@@ -949,7 +960,7 @@ class _BaseState extends State<Base> {
                   MaterialButton(
                     padding: EdgeInsets.only(left: 16, right: 16, bottom: 12),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => CNPJ()));
                     },
                     child: Container(

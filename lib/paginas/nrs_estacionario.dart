@@ -80,7 +80,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                 borderRadius:
                     BorderRadius.only(bottomRight: Radius.circular(70)),
                 image: DecorationImage(
-                  image: AssetImage('assets/images/menu.jpg'),
+                  image: AssetImage('assets/images/normas.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
