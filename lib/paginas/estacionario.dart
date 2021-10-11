@@ -22,8 +22,8 @@ import 'package:guardacorpo/paginas/primeiros_socorros_estacionario.dart';
 import 'package:guardacorpo/paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/paginas/sinalizacao.dart';
 import 'package:guardacorpo/paginas/tecnico.dart';
-import 'package:guardacorpo/paginas/treinamentos_estacionario.dart';
-import 'package:guardacorpo/paginas/nrs_estacionario.dart';
+import 'package:guardacorpo/treinamentos/treinamentos_estacionario.dart';
+import 'package:guardacorpo/normas/nrs_estacionario.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // final interstitialAd = InterstitialAd();

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:guardacorpo/paginas/nrs_estacionario.dart';
+import 'package:guardacorpo/normas/nrs_estacionario.dart';
 import 'package:guardacorpo/treinamentos/treinamento1.dart';
 import 'package:guardacorpo/treinamentos/treinamento10.dart';
 import 'package:guardacorpo/treinamentos/treinamento11.dart';
