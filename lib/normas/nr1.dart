@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guardacorpo/paginas/nrs_estacionario.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -42,9 +41,7 @@ class _NR1State extends State<NR1> {
                           padding: EdgeInsets.zero,
                           constraints: BoxConstraints(),
                           onPressed: () {
-                            Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(
-                                    builder: (context) => NrsEstacionario()));
+                            Navigator.pop(context);
                           },
                         )
                       ],

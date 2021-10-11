@@ -121,7 +121,8 @@ class _BaseState extends State<Base> {
                                     // if (interstitialAd.isAvailable) {
                                     //   await interstitialAd.show();
                                     // }
-                                    Navigator.of(context).pushReplacement(
+                                    Navigator.push(
+                                        context,
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 NrsEstacionario()));

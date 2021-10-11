@@ -56,7 +56,6 @@ import 'package:guardacorpo/normas/nr6.dart';
 import 'package:guardacorpo/normas/nr7.dart';
 import 'package:guardacorpo/normas/nr8.dart';
 import 'package:guardacorpo/normas/nr9.dart';
-import 'package:guardacorpo/paginas/estacionario.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
 
 final interstitialAd = InterstitialAd();
@@ -105,9 +104,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                               padding: EdgeInsets.zero,
                               constraints: BoxConstraints(),
                               onPressed: () {
-                                Navigator.of(context).pushReplacement(
-                                    MaterialPageRoute(
-                                        builder: (context) => Base()));
+                                Navigator.pop(context);
                               },
                             ),
                           ],
@@ -149,7 +146,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR1()));
                         },
                         child: Container(
@@ -187,7 +184,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR2()));
                         },
                         child: Container(
@@ -225,7 +222,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR3()));
                         },
                         child: Container(
@@ -262,7 +259,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR4()));
                         },
                         child: Container(
@@ -300,7 +297,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR5()));
                         },
                         child: Container(
