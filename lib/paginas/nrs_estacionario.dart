@@ -335,7 +335,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR6()));
                         },
                         child: Container(
@@ -373,7 +373,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR7()));
                         },
                         child: Container(
@@ -411,7 +411,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR8()));
                         },
                         child: Container(
@@ -448,7 +448,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR9()));
                         },
                         child: Container(
@@ -486,7 +486,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR10()));
                         },
                         child: Container(
@@ -524,7 +524,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR11()));
                         },
                         child: Container(
@@ -562,7 +562,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR11Anexo1()));
                         },
@@ -601,7 +602,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR12()));
                         },
                         child: Container(
@@ -639,7 +640,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR13()));
                         },
                         child: Container(
@@ -677,7 +678,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR14()));
                         },
                         child: Container(
@@ -714,7 +715,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR15()));
                         },
                         child: Container(
@@ -752,7 +753,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo1()));
                         },
@@ -791,7 +793,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo2()));
                         },
@@ -830,7 +833,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo3()));
                         },
@@ -869,7 +873,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo4()));
                         },
@@ -907,7 +912,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo5()));
                         },
@@ -946,7 +952,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo6()));
                         },
@@ -985,7 +992,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo7()));
                         },
@@ -1024,7 +1032,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo8()));
                         },
@@ -1062,7 +1071,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo9()));
                         },
@@ -1100,7 +1110,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo10()));
                         },
@@ -1138,7 +1149,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo11()));
                         },
@@ -1177,7 +1189,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo12()));
                         },
@@ -1216,7 +1229,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo13()));
                         },
@@ -1255,7 +1269,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo13a()));
                         },
@@ -1293,7 +1308,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR15Anexo14()));
                         },
@@ -1332,7 +1348,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR16()));
                         },
                         child: Container(
@@ -1370,7 +1386,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR17()));
                         },
                         child: Container(
@@ -1407,7 +1423,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR17anexo1()));
                         },
@@ -1446,7 +1463,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR17anexo2()));
                         },
@@ -1485,7 +1503,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR18()));
                         },
                         child: Container(
@@ -1523,7 +1541,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR19()));
                         },
                         child: Container(
@@ -1560,7 +1578,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR20()));
                         },
                         child: Container(
@@ -1598,7 +1616,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR21()));
                         },
                         child: Container(
@@ -1636,7 +1654,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR22()));
                         },
                         child: Container(
@@ -1674,7 +1692,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR23()));
                         },
                         child: Container(
@@ -1712,7 +1730,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR24()));
                         },
                         child: Container(
@@ -1750,7 +1768,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR25()));
                         },
                         child: Container(
@@ -1787,7 +1805,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR26()));
                         },
                         child: Container(
@@ -1825,7 +1843,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR27()));
                         },
                         child: Container(
@@ -1863,7 +1881,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR28()));
                         },
                         child: Container(
@@ -1901,7 +1919,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR29()));
                         },
                         child: Container(
@@ -1939,7 +1957,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR30()));
                         },
                         child: Container(
@@ -1977,7 +1995,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR30anexo1()));
                         },
@@ -2016,7 +2035,8 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(
+                              context,
                               MaterialPageRoute(
                                   builder: (context) => NR30anexo2()));
                         },
@@ -2055,7 +2075,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR31()));
                         },
                         child: Container(
@@ -2093,7 +2113,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR32()));
                         },
                         child: Container(
@@ -2131,7 +2151,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR33()));
                         },
                         child: Container(
@@ -2169,7 +2189,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR34()));
                         },
                         child: Container(
@@ -2207,7 +2227,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR35()));
                         },
                         child: Container(
@@ -2244,7 +2264,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR36()));
                         },
                         child: Container(
@@ -2282,7 +2302,7 @@ class _NrsEstacionarioState extends State<NrsEstacionario> {
                           if (interstitialAd.isAvailable) {
                             await interstitialAd.show();
                           }
-                          Navigator.of(context).pushReplacement(
+                          Navigator.push(context,
                               MaterialPageRoute(builder: (context) => NR37()));
                         },
                         child: Container(
