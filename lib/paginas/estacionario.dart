@@ -9,7 +9,7 @@ import 'package:guardacorpo/paginas/cnpj.dart';
 import 'package:guardacorpo/paginas/consulta_ca.dart';
 import 'package:guardacorpo/paginas/datas.dart';
 import 'package:guardacorpo/dds/dds_estac.dart';
-import 'package:guardacorpo/paginas/epi_estacionario.dart';
+import 'package:guardacorpo/paginas/epi.dart';
 import 'package:guardacorpo/paginas/esocial.dart';
 import 'package:guardacorpo/paginas/historia.dart';
 import 'package:guardacorpo/paginas/incendio.dart';
