@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DdsEstacionario extends StatelessWidget {
-  const DdsEstacionario({ Key? key }) : super(key: key);
+class DDS3 extends StatelessWidget {
+  const DDS3({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
