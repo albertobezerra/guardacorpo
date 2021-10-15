@@ -8,6 +8,7 @@ class Cid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         children: [
           Flexible(
@@ -57,9 +58,11 @@ class Cid extends StatelessWidget {
           ),
           Flexible(
               flex: 12,
-              child: WebView(
-                initialUrl: 'https://cid10.com.br/%5Ecode',
-                javascriptMode: JavascriptMode.unrestricted,
+              child: Container(
+                child: WebView(
+                  initialUrl: 'https://cid10.com.br/%5Ecode',
+                  javascriptMode: JavascriptMode.unrestricted,
+                ),
               )
               // WebView(
               //   initialUrl: 'flutter.dev',
