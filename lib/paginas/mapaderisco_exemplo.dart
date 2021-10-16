@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_pro/webview_flutter.dart';
 import 'package:native_admob_flutter/native_admob_flutter.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class Esocial extends StatelessWidget {
-  const Esocial({Key? key}) : super(key: key);
+class MapaExemplo extends StatelessWidget {
+  const MapaExemplo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Column(
         children: [
           Flexible(
@@ -24,7 +24,7 @@ class Esocial extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.only(top: 60, left: 30),
                     width: MediaQuery.of(context).size.width,
-                    child: Row(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         IconButton(
@@ -38,15 +38,6 @@ class Esocial extends StatelessWidget {
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'E-social'.toUpperCase(),
-                          style: TextStyle(
-                            fontFamily: 'Segoe Black',
-                            color: Colors.white,
-                            fontSize: 18,
-                          ),
                         )
                       ],
                     ),
@@ -57,13 +48,12 @@ class Esocial extends StatelessWidget {
             flex: 2,
           ),
           Flexible(
-              flex: 12,
-              child: Container(
-                child: WebView(
-                  initialUrl: 'https://www.gov.br/esocial/pt-br',
-                  javascriptMode: JavascriptMode.unrestricted,
-                ),
-              )),
+            child: SfPdfViewer.asset(
+              'assets/mapaderisco.pdf',
+              key: _pdfViewerKey,
+            ),
+            flex: 12,
+          ),
           Flexible(
             child: Container(
               child: BannerAd(size: BannerSize.ADAPTIVE),
