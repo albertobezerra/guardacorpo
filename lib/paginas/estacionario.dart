@@ -18,7 +18,7 @@ import 'package:guardacorpo/paginas/nbr.dart';
 import 'package:guardacorpo/nho/nho_estacionario.dart';
 import 'package:guardacorpo/paginas/ordemservico.dart';
 import 'package:guardacorpo/paginas/ppp.dart';
-import 'package:guardacorpo/paginas/primeiros_socorros_estacionario.dart';
+import 'package:guardacorpo/primeirossocorros/primeiros_socorros_estacionario.dart';
 import 'package:guardacorpo/paginas/riscos_ambientais.dart';
 import 'package:guardacorpo/paginas/sinalizacao.dart';
 import 'package:guardacorpo/paginas/tecnico.dart';
