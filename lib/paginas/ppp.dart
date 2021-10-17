@@ -59,7 +59,7 @@ class PPP extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'MApa de risco'.toUpperCase(),
+                      'PPP'.toUpperCase(),
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,
