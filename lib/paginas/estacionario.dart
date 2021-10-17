@@ -15,7 +15,7 @@ import 'package:guardacorpo/paginas/historia.dart';
 import 'package:guardacorpo/paginas/incendio.dart';
 import 'package:guardacorpo/paginas/mapaderisco.dart';
 import 'package:guardacorpo/paginas/nbr.dart';
-import 'package:guardacorpo/paginas/nho_estacionario.dart';
+import 'package:guardacorpo/nho/nho_estacionario.dart';
 import 'package:guardacorpo/paginas/ordemservico.dart';
 import 'package:guardacorpo/paginas/ppp.dart';
 import 'package:guardacorpo/paginas/primeiros_socorros_estacionario.dart';
