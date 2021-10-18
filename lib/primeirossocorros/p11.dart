@@ -64,7 +64,7 @@ class P11 extends StatelessWidget {
                             fontFamily: 'Segoe Bold')),
                     SizedBox(height: 20),
                     Text(
-                      'É a ruptura ou quebra de um osso. Podem ser ocasionadas por uma queda ou um choque entre dois corpos.\n\nQuando uma pessoa sofre algum tipo de fratura, ela deve ser encaminhada a um hospital para receber cuidados médicos.\n\n\nO que fazer?\n\n\n • Quando a fratura for no braço ou na perna, podemos imobilizar o osso quebrado com uma tala ou tipoia. A vítima deve manter-se o mais próximo possível da posição normal até que chegue ao hospital.\n\n • Quando a fratura for na cabeça, coluna ou pescoço, devemos imobilizar a vítima e não removê-la até que chegue a ambulância.',
+                      'É a ruptura ou quebra de um osso. Podem ser ocasionadas por uma queda ou um choque entre dois corpos.\n\nQuando uma pessoa sofre algum tipo de fratura, ela deve ser encaminhada a um hospital para receber cuidados médicos.\n\n\nO que fazer?\n• Quando a fratura for no braço ou na perna, podemos imobilizar o osso quebrado com uma tala ou tipoia. A vítima deve manter-se o mais próximo possível da posição normal até que chegue ao hospital.\n\n • Quando a fratura for na cabeça, coluna ou pescoço, devemos imobilizar a vítima e não removê-la até que chegue a ambulância.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,

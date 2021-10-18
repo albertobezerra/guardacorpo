@@ -64,7 +64,7 @@ class P9 extends StatelessWidget {
                             fontFamily: 'Segoe Bold')),
                     SizedBox(height: 20),
                     Text(
-                      'É́ a perda de sangue pelo nariz, causada pela ruptura de um vaso sanguíneo.\n\n\nO que fazer?\n\n\n • Sentar a pessoa com a cabeça levemente inclinada para a frente, fazendo-a respirar pela boca, evitando que o sangue vá para a garganta e seja engolido.\n\n • Pressionar as narinas por cerca de 10 minutos.\n\n • Procurar um médico, se sangramento não parar e a perda de sangue for muito grande.\n\n • Colocar compressas frias sobre o nariz.',
+                      'É́ a perda de sangue pelo nariz, causada pela ruptura de um vaso sanguíneo.\n\n\nO que fazer?\n • Sentar a pessoa com a cabeça levemente inclinada para a frente, fazendo-a respirar pela boca, evitando que o sangue vá para a garganta e seja engolido.\n\n • Pressionar as narinas por cerca de 10 minutos.\n\n • Procurar um médico, se sangramento não parar e a perda de sangue for muito grande.\n\n • Colocar compressas frias sobre o nariz.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,

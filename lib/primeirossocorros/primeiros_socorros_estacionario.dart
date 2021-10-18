@@ -60,7 +60,7 @@ class PrimeirosSocorrosEstacionario extends StatelessWidget {
                         ),
                         SizedBox(height: 120),
                         Text(
-                          'NORMA DE HIGIENE OCUPACIONAL'.toUpperCase(),
+                          'Primeiros Socorros'.toUpperCase(),
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 30,
@@ -106,8 +106,7 @@ class PrimeirosSocorrosEstacionario extends StatelessWidget {
                               SizedBox(width: 20),
                               Expanded(
                                 child: Text(
-                                  'Informações Gerais'
-                                      .toUpperCase(),
+                                  'Informações Gerais'.toUpperCase(),
                                   maxLines: 5,
                                   overflow: TextOverflow.ellipsis,
                                   softWrap: false,

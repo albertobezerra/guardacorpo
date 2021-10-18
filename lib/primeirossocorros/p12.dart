@@ -64,7 +64,7 @@ class P12 extends StatelessWidget {
                             fontFamily: 'Segoe Bold')),
                     SizedBox(height: 20),
                     Text(
-                      'Quando uma pessoa se afoga, ela perde a respiração. Isso acontece porque suas vias aéreas ficam inundadas.\n\n\nO que fazer?\n\n\n • Colocar a vítima de costas e fazer respiração boca a boca e massagens cardíacas intercaladas.\n\n • Conduzir imediatamente a vítima a um hospital ou pronto-socorro próximo.',
+                      'Quando uma pessoa se afoga, ela perde a respiração. Isso acontece porque suas vias aéreas ficam inundadas.\n\n\nO que fazer?\n• Colocar a vítima de costas e fazer respiração boca a boca e massagens cardíacas intercaladas.\n\n • Conduzir imediatamente a vítima a um hospital ou pronto-socorro próximo.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,

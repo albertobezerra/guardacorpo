@@ -64,7 +64,7 @@ class P10 extends StatelessWidget {
                             fontFamily: 'Segoe Bold')),
                     SizedBox(height: 20),
                     Text(
-                      'Podem ser provocadas por choque elétrico, fogo, ferro quente, água quente, exposição prolongada ao sol forte e outras situações.\n\n\nO que fazer?\n\n\n • Se a queimadura for superficial, lavar apenas com água gelada e secar o local com pano limpo.\n\n • Se houver necessidade de um curativo, deve-se fazê-lo com gaze para proteger, evitar atrito e contaminação.\n\n • Quando a queimadura é muito grande ou é causada pelo excesso de exposição ao sol, deve-se ingerir muito líquido.\n\n • Se a queimadura for grande, procure um hospital para receber tratamento adequado.\n\n\nATENÇÃO\n\nSe houver o aparecimento de bolhas, não as fure e não use pomadas, pasta de dente, azeite ou outro produto caseiro.',
+                      'Podem ser provocadas por choque elétrico, fogo, ferro quente, água quente, exposição prolongada ao sol forte e outras situações.\n\n\nO que fazer?\n • Se a queimadura for superficial, lavar apenas com água gelada e secar o local com pano limpo.\n\n • Se houver necessidade de um curativo, deve-se fazê-lo com gaze para proteger, evitar atrito e contaminação.\n\n • Quando a queimadura é muito grande ou é causada pelo excesso de exposição ao sol, deve-se ingerir muito líquido.\n\n • Se a queimadura for grande, procure um hospital para receber tratamento adequado.\n\n\nATENÇÃO\n\nSe houver o aparecimento de bolhas, não as fure e não use pomadas, pasta de dente, azeite ou outro produto caseiro.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,

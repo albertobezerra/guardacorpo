@@ -64,7 +64,7 @@ class P13 extends StatelessWidget {
                             fontFamily: 'Segoe Bold')),
                     SizedBox(height: 20),
                     Text(
-                      'A mordida de cachorros e gatos pode ocasionar a raiva, que é uma doença muito perigosa. Ela pode ser evitada por meio da vacina antirrábica, que é aplicada nesses animais.\n\n\nO que fazer?\n\n\n • Lavar o local com água e sabão para desinfetá-lo.\n\n • Proteger o ferimento com gaze ou pano limpo e encaminhar a vítima para o hospital ou pronto-socorro mais próximo.\n\n • O animal que causou a mordedura deve ficar em observação para que se verifique se ele está doente.',
+                      'A mordida de cachorros e gatos pode ocasionar a raiva, que é uma doença muito perigosa. Ela pode ser evitada por meio da vacina antirrábica, que é aplicada nesses animais.\n\n\nO que fazer?\n• Lavar o local com água e sabão para desinfetá-lo.\n\n • Proteger o ferimento com gaze ou pano limpo e encaminhar a vítima para o hospital ou pronto-socorro mais próximo.\n\n • O animal que causou a mordedura deve ficar em observação para que se verifique se ele está doente.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 14,
