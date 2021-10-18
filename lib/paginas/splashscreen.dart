@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'estacionario.dart';
@@ -11,6 +10,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  // static final String oneSignalAppId = "026eb6b9-e652-4e3c-b970-d3425bd4487e";
   void requeridoPermissao() async {
     var status = await Permission.storage.status;
     if (!status.isGranted) {

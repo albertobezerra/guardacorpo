@@ -33,7 +33,8 @@ dependencies:
   url_launcher: ^6.0.10
   native_admob_flutter: ^1.5.0
   syncfusion_flutter_pdfviewer: ^19.3.44-beta
-  flutter_webview_pro: ^1.0.0  
+  flutter_webview_pro: ^1.0.0
+   
   
   
 dev_dependencies:
