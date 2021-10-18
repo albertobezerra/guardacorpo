@@ -28,14 +28,14 @@ import 'package:url_launcher/url_launcher.dart';
 
 // final interstitialAd = InterstitialAd();
 
-class Base extends StatefulWidget {
-  const Base({Key? key}) : super(key: key);
+class Estacionario extends StatefulWidget {
+  const Estacionario({Key? key}) : super(key: key);
 
   @override
-  _BaseState createState() => _BaseState();
+  _EstacionarioState createState() => _EstacionarioState();
 }
 
-class _BaseState extends State<Base> {
+class _EstacionarioState extends State<Estacionario> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

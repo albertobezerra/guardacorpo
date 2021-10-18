@@ -1,15 +1,27 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'estacionario.dart';
 
-class Index extends StatefulWidget {
-  const Index({Key? key}) : super(key: key);
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  _IndexState createState() => _IndexState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _IndexState extends State<Index> {
+class _SplashScreenState extends State<SplashScreen> {
+  void requeridoPermissao() async {
+    var status = await Permission.storage.status;
+    if (!status.isGranted) {
+      await Permission.storage.request();
+    }
+    // var status2 = await Permission.manageExternalStorage.status;
+    // if (!status2.isGranted) {
+    //   await Permission.manageExternalStorage.request();
+    // }
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -61,8 +73,9 @@ class _IndexState extends State<Index> {
                   child: MaterialButton(
                     minWidth: double.infinity,
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => Base()));
+                      requeridoPermissao();
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => Estacionario()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
