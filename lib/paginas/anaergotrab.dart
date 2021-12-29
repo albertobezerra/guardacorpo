@@ -5,6 +5,6 @@ class AnaErgTrab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(child: Container());
   }
 }
