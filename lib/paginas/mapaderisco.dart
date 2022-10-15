@@ -87,10 +87,7 @@ class MapadeRisco extends StatelessWidget {
                     Center(
                       child: Padding(
                           padding: const EdgeInsets.all(20),
-                          child: FlatButton(
-                            padding: EdgeInsets.all(10),
-                            color: Color(0xFF0C5422),
-                            textColor: Colors.white, // foreground
+                          child: TextButton(
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -98,6 +95,10 @@ class MapadeRisco extends StatelessWidget {
                                       builder: (context) => MapaExemplo()));
                             },
                             child: Text('Exemplo'),
+                            style: TextButton.styleFrom(
+                                backgroundColor: const Color(0xff0C5422),
+                                foregroundColor: Colors.white,
+                                padding: EdgeInsets.all(10)),
                           )),
                     )
                   ],
